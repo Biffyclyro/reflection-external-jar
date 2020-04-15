@@ -1,4 +1,3 @@
-import javax.management.Attribute;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
@@ -6,7 +5,6 @@ import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -78,7 +76,7 @@ public class Ex6 {
                             double.class);
 
             Method extratoConta = testeBanco
-                    .getDeclaredMethod("tirarEstrato",
+                    .getDeclaredMethod("tirarExtrato",
                             int.class);
 
 
